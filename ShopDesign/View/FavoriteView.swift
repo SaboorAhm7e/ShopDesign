@@ -8,8 +8,23 @@
 import SwiftUI
 
 struct FavoriteView: View {
+    var gridItem : [GridItem] = [
+        .init(.flexible()),
+        .init(.flexible())
+    ]
     var body: some View {
-        Text("Favorite")
+        NavigationStack {
+            ScrollView(showsIndicators: false) {
+                LazyVGrid(columns: gridItem){
+                    ForEach(0..<4,id:\.self) { item in
+                        FavoriteItemView()
+                    }
+                }
+                .padding()
+                
+            }
+            .navigationTitle("Favorites")
+        }
     }
 }
 
