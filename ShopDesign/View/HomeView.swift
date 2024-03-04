@@ -20,13 +20,9 @@ struct HomeView: View {
             VStack() {
                 BannerView()
                 
-                HStack {
-                    ForEach(categoryArray, id: \.self) { category in
-                        Text(category)
-                            .padding(.horizontal)
-                    }
-                }
-                .padding(.vertical, 5)
+                TestTabView()
+                    .frame(height: 80)
+                //.padding(.vertical, 5)
                 Divider()
                 
                 ScrollView(.vertical, showsIndicators: false) {

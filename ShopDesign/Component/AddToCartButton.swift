@@ -16,20 +16,12 @@ struct AddToCartButton: View {
                     Image(systemName: "cart")
                     Text("Add to Cart")
                 }
-                .font(.title3)
-                .fontWeight(.semibold)
-                .foregroundStyle(Color.white)
-                .frame(height: 60)
-                .frame(maxWidth: .infinity)
-                //.padding()
-                .background(
-                    Capsule().fill(Color.black)
-                )
             }
-            //.frame(maxWidth:.infinity)
+            .buttonStyle(BlackButtonStyle())
     }
 }
 
 #Preview {
     AddToCartButton()
+        .padding()
 }
