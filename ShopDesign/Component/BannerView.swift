@@ -28,8 +28,8 @@ struct BannerView: View {
                         .foregroundStyle(Color.white)
                         .shadow(radius: 10)
                     
-                    Button {
-                        print("shop Now")
+                    NavigationLink {
+                        ShopNowView()
                     } label: {
                         HStack {
                             Text("Shop Now")
@@ -38,9 +38,17 @@ struct BannerView: View {
                         .font(.body)
                         .fontWeight(.semibold)
                         .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
-                       
+                        .foregroundStyle(Color.white)
                     }
-                    .tint(Color.white)
+
+//                    
+//                    Button {
+//                        print("shop Now")
+//                    } label: {
+//                        
+//                       
+//                    }
+//                    .tint(Color.white)
 
                 }
                 .offset(x:-50,y: -10)

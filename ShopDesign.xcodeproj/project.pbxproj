@@ -24,6 +24,13 @@
 		D37EA94D2B8F70330000C0CE /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37EA94C2B8F70330000C0CE /* BundleExtension.swift */; };
 		D37EA94F2B8F71BE0000C0CE /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37EA94E2B8F71BE0000C0CE /* ProductModel.swift */; };
 		D37EA9522B8F757F0000C0CE /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37EA9512B8F757F0000C0CE /* ProductViewModel.swift */; };
+		D38B99AE2B98897B00EF1210 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D38B99AD2B98897B00EF1210 /* WidgetKit.framework */; };
+		D38B99B02B98897B00EF1210 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D38B99AF2B98897B00EF1210 /* SwiftUI.framework */; };
+		D38B99B32B98897B00EF1210 /* ShopDesignWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38B99B22B98897B00EF1210 /* ShopDesignWidgetBundle.swift */; };
+		D38B99B52B98897B00EF1210 /* ShopDesignWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38B99B42B98897B00EF1210 /* ShopDesignWidget.swift */; };
+		D38B99B72B98897E00EF1210 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D38B99B62B98897E00EF1210 /* Assets.xcassets */; };
+		D38B99BB2B98897E00EF1210 /* ShopDesignWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D38B99AB2B98897B00EF1210 /* ShopDesignWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D38B99C22B989B3000EF1210 /* ShopNowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38B99C12B989B3000EF1210 /* ShopNowView.swift */; };
 		D3A104322B94AA580057F037 /* TestTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A104312B94AA580057F037 /* TestTabView.swift */; };
 		D3B730582B921854004449BD /* FavoriteItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B730572B921854004449BD /* FavoriteItemView.swift */; };
 		D3B7305A2B92275C004449BD /* PaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B730592B92275C004449BD /* PaymentView.swift */; };
@@ -34,6 +41,30 @@
 		D3C3701D2B90C189009E3BD3 /* CartProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C3701C2B90C189009E3BD3 /* CartProductView.swift */; };
 		D3C3701F2B90C532009E3BD3 /* FeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C3701E2B90C532009E3BD3 /* FeeView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D38B99B92B98897E00EF1210 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D37EA91E2B8F45BD0000C0CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D38B99AA2B98897B00EF1210;
+			remoteInfo = ShopDesignWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D38B99BC2B98897E00EF1210 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D38B99BB2B98897E00EF1210 /* ShopDesignWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D31D25B12B93619500E85954 /* TextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldModifier.swift; sourceTree = "<group>"; };
@@ -54,6 +85,14 @@
 		D37EA94C2B8F70330000C0CE /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
 		D37EA94E2B8F71BE0000C0CE /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 		D37EA9512B8F757F0000C0CE /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
+		D38B99AB2B98897B00EF1210 /* ShopDesignWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShopDesignWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D38B99AD2B98897B00EF1210 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		D38B99AF2B98897B00EF1210 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		D38B99B22B98897B00EF1210 /* ShopDesignWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopDesignWidgetBundle.swift; sourceTree = "<group>"; };
+		D38B99B42B98897B00EF1210 /* ShopDesignWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopDesignWidget.swift; sourceTree = "<group>"; };
+		D38B99B62B98897E00EF1210 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D38B99B82B98897E00EF1210 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D38B99C12B989B3000EF1210 /* ShopNowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopNowView.swift; sourceTree = "<group>"; };
 		D3A104312B94AA580057F037 /* TestTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTabView.swift; sourceTree = "<group>"; };
 		D3B730572B921854004449BD /* FavoriteItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteItemView.swift; sourceTree = "<group>"; };
 		D3B730592B92275C004449BD /* PaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentView.swift; sourceTree = "<group>"; };
@@ -70,6 +109,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D38B99A82B98897B00EF1210 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D38B99B02B98897B00EF1210 /* SwiftUI.framework in Frameworks */,
+				D38B99AE2B98897B00EF1210 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +154,8 @@
 			isa = PBXGroup;
 			children = (
 				D37EA9282B8F45BD0000C0CE /* ShopDesign */,
+				D38B99B12B98897B00EF1210 /* ShopDesignWidget */,
+				D38B99AC2B98897B00EF1210 /* Frameworks */,
 				D37EA9272B8F45BD0000C0CE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -114,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				D37EA9262B8F45BD0000C0CE /* ShopDesign.app */,
+				D38B99AB2B98897B00EF1210 /* ShopDesignWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,6 +204,7 @@
 				D37EA9422B8F46D20000C0CE /* ProfileView.swift */,
 				D3B730592B92275C004449BD /* PaymentView.swift */,
 				D3A104312B94AA580057F037 /* TestTabView.swift */,
+				D38B99C12B989B3000EF1210 /* ShopNowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -205,6 +257,34 @@
 			path = "View Model";
 			sourceTree = "<group>";
 		};
+		D38B99AC2B98897B00EF1210 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D38B99AD2B98897B00EF1210 /* WidgetKit.framework */,
+				D38B99AF2B98897B00EF1210 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D38B99B12B98897B00EF1210 /* ShopDesignWidget */ = {
+			isa = PBXGroup;
+			children = (
+				D38B99C02B988C3700EF1210 /* View */,
+				D38B99B22B98897B00EF1210 /* ShopDesignWidgetBundle.swift */,
+				D38B99B42B98897B00EF1210 /* ShopDesignWidget.swift */,
+				D38B99B62B98897E00EF1210 /* Assets.xcassets */,
+				D38B99B82B98897E00EF1210 /* Info.plist */,
+			);
+			path = ShopDesignWidget;
+			sourceTree = "<group>";
+		};
+		D38B99C02B988C3700EF1210 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -215,15 +295,34 @@
 				D37EA9222B8F45BD0000C0CE /* Sources */,
 				D37EA9232B8F45BD0000C0CE /* Frameworks */,
 				D37EA9242B8F45BD0000C0CE /* Resources */,
+				D38B99BC2B98897E00EF1210 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D38B99BA2B98897E00EF1210 /* PBXTargetDependency */,
 			);
 			name = ShopDesign;
 			productName = ShopDesign;
 			productReference = D37EA9262B8F45BD0000C0CE /* ShopDesign.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D38B99AA2B98897B00EF1210 /* ShopDesignWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D38B99BF2B98897E00EF1210 /* Build configuration list for PBXNativeTarget "ShopDesignWidgetExtension" */;
+			buildPhases = (
+				D38B99A72B98897B00EF1210 /* Sources */,
+				D38B99A82B98897B00EF1210 /* Frameworks */,
+				D38B99A92B98897B00EF1210 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShopDesignWidgetExtension;
+			productName = ShopDesignWidgetExtension;
+			productReference = D38B99AB2B98897B00EF1210 /* ShopDesignWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -236,6 +335,9 @@
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					D37EA9252B8F45BD0000C0CE = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					D38B99AA2B98897B00EF1210 = {
 						CreatedOnToolsVersion = 15.2;
 					};
 				};
@@ -254,6 +356,7 @@
 			projectRoot = "";
 			targets = (
 				D37EA9252B8F45BD0000C0CE /* ShopDesign */,
+				D38B99AA2B98897B00EF1210 /* ShopDesignWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -266,6 +369,14 @@
 				D37EA94A2B8F700A0000C0CE /* products.json in Resources */,
 				D37EA9312B8F45C10000C0CE /* Preview Assets.xcassets in Resources */,
 				D37EA92E2B8F45C10000C0CE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D38B99A92B98897B00EF1210 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D38B99B72B98897E00EF1210 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,12 +408,30 @@
 				D37EA9472B8F50550000C0CE /* ProductGridView.swift in Sources */,
 				D37EA92A2B8F45BD0000C0CE /* ShopDesignApp.swift in Sources */,
 				D31D25B22B93619500E85954 /* TextFieldModifier.swift in Sources */,
+				D38B99C22B989B3000EF1210 /* ShopNowView.swift in Sources */,
 				D3C3701B2B90BFE0009E3BD3 /* CheckoutView.swift in Sources */,
 				D3C370172B9098C0009E3BD3 /* ProductSizeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D38B99A72B98897B00EF1210 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D38B99B32B98897B00EF1210 /* ShopDesignWidgetBundle.swift in Sources */,
+				D38B99B52B98897B00EF1210 /* ShopDesignWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D38B99BA2B98897E00EF1210 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D38B99AA2B98897B00EF1210 /* ShopDesignWidgetExtension */;
+			targetProxy = D38B99B92B98897E00EF1210 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		D37EA9322B8F45C10000C0CE /* Debug */ = {
@@ -427,6 +556,7 @@
 		D37EA9352B8F45C10000C0CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -456,6 +586,7 @@
 		D37EA9362B8F45C10000C0CE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -482,6 +613,60 @@
 			};
 			name = Release;
 		};
+		D38B99BD2B98897E00EF1210 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4HMHL946U5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShopDesignWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ShopDesignWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.saboorahmad.ShopDesign.ShopDesignWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D38B99BE2B98897E00EF1210 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4HMHL946U5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShopDesignWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ShopDesignWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.saboorahmad.ShopDesign.ShopDesignWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -499,6 +684,15 @@
 			buildConfigurations = (
 				D37EA9352B8F45C10000C0CE /* Debug */,
 				D37EA9362B8F45C10000C0CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D38B99BF2B98897E00EF1210 /* Build configuration list for PBXNativeTarget "ShopDesignWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D38B99BD2B98897E00EF1210 /* Debug */,
+				D38B99BE2B98897E00EF1210 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
