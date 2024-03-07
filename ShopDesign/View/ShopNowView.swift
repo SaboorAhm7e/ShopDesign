@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct ShopNowView: View {
     
@@ -15,14 +16,15 @@ struct ShopNowView: View {
         .init(.flexible()),
         .init(.flexible())
     ]
-    var viewModel = ProductViewModel()
+    //var viewModel = ProductViewModel()
+    @Query var products : [ProductPersistentModel]
     var body: some View {
         VStack {
             NavigationView {
                 ScrollView(.vertical,showsIndicators: false) {
                     LazyVGrid(columns: column, content: {
                         
-                        ForEach(viewModel.products,id:\.name) { product in
+                        ForEach(products,id:\.name) { product in
                             ProductGridView(product: product)
                         }
                     })
@@ -47,7 +49,7 @@ struct ShopNowView: View {
                 }
             }
             .onAppear {
-                viewModel.loadProducts()
+                //viewModel.loadProducts()
             }
         }
         .navigationBarHidden(true)

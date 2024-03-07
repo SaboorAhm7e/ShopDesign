@@ -40,6 +40,7 @@
 		D3C3701B2B90BFE0009E3BD3 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C3701A2B90BFE0009E3BD3 /* CheckoutView.swift */; };
 		D3C3701D2B90C189009E3BD3 /* CartProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C3701C2B90C189009E3BD3 /* CartProductView.swift */; };
 		D3C3701F2B90C532009E3BD3 /* FeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C3701E2B90C532009E3BD3 /* FeeView.swift */; };
+		D3DE2EAE2B99C9C30056BAA2 /* ProductPersistentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DE2EAD2B99C9C30056BAA2 /* ProductPersistentModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +103,7 @@
 		D3C3701A2B90BFE0009E3BD3 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 		D3C3701C2B90C189009E3BD3 /* CartProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartProductView.swift; sourceTree = "<group>"; };
 		D3C3701E2B90C532009E3BD3 /* FeeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeeView.swift; sourceTree = "<group>"; };
+		D3DE2EAD2B99C9C30056BAA2 /* ProductPersistentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductPersistentModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				D37EA94E2B8F71BE0000C0CE /* ProductModel.swift */,
+				D3DE2EAD2B99C9C30056BAA2 /* ProductPersistentModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 				D3C370192B909B6E009E3BD3 /* AddToCartButton.swift in Sources */,
 				D3C3701F2B90C532009E3BD3 /* FeeView.swift in Sources */,
 				D37EA93B2B8F46530000C0CE /* DetailView.swift in Sources */,
+				D3DE2EAE2B99C9C30056BAA2 /* ProductPersistentModel.swift in Sources */,
 				D37EA92C2B8F45BD0000C0CE /* ContentView.swift in Sources */,
 				D37EA9452B8F49160000C0CE /* BannerView.swift in Sources */,
 				D3C3701D2B90C189009E3BD3 /* CartProductView.swift in Sources */,

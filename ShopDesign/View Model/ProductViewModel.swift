@@ -7,9 +7,11 @@
 
 import Foundation
 import Observation
+import SwiftData
 
 @Observable
 class ProductViewModel {
+    
     var products : [Product] = []
     func loadProducts() {
         if let loadProducts : [Product] = Bundle.main.decode(type: [Product].self, filename: "products.json") {

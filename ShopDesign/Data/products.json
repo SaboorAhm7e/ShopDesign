@@ -2,43 +2,43 @@
     { "name" : "Blue T-Shirt",
       "price": 25,
       "coverImage" : "blue",
-      "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "detail" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "sizes" : ["S","M","L"]
     },
     { "name" : "Brown T-Shirt",
       "price": 30,
       "coverImage" : "brown",
-      "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "detail" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "sizes" : ["S","M","L"]
     },
     { "name" : "Yellow T-Shirt",
       "price": 75,
       "coverImage" : "yellow",
-      "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "detail" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "sizes" : ["S","M","L"]
     },
     { "name" : "Silver T-Shirt",
       "price": 40,
       "coverImage" : "silver",
-      "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "detail" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "sizes" : ["S","M","L"]
     },
     { "name" : "Woody T-Shirt",
       "price": 60,
       "coverImage" : "wood",
-      "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "detail" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "sizes" : ["S","M","L"]
     },
     { "name" : "Black T-Shirt",
       "price": 90,
       "coverImage" : "black",
-      "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "detail" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "sizes" : ["S","M","L"]
     },
     { "name" : "Pink T-Shirt",
       "price": 45,
       "coverImage" : "pink",
-      "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "detail" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "sizes" : ["S","M","L"]
     }
     

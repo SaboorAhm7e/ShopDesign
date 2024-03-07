@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ProductGridView: View {
     
-    var product : Product
+    var product : ProductPersistentModel
     
     var body: some View {
         
@@ -34,5 +34,5 @@ struct ProductGridView: View {
 }
 
 #Preview {
-    ProductGridView(product: Product(name: "blue", price: 20, coverImage: "blue", description: "abc xyz", sizes: ["S","M","L"]))
+    ProductGridView(product: ProductPersistentModel(name: "blue", price: 20, coverImage: "blue", detail: "abc xyz", sizes: ["S","M","L"],isFavorite: false,isCartItem: false))
 }

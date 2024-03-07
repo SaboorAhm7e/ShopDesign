@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct HomeView: View {
     let categoryArray: [String] = ["Men", "Woman", "Kid"]
@@ -13,7 +14,8 @@ struct HomeView: View {
         .init(.flexible()),
         .init(.flexible())
     ]
-    var viewModel = ProductViewModel()
+   // var viewModel = ProductViewModel()
+    @Query var products : [ProductPersistentModel]
     
     var body: some View {
         NavigationView {
@@ -27,7 +29,7 @@ struct HomeView: View {
                 
                 ScrollView(.vertical, showsIndicators: false) {
                     LazyVGrid(columns: column) {
-                        ForEach(viewModel.products, id: \.name) { product in
+                        ForEach(products, id: \.name) { product in
                             NavigationLink(destination: DetailView()) {
                                 ProductGridView(product: product)
                                     .tint(Color.black)
@@ -56,7 +58,7 @@ struct HomeView: View {
             }
         }
         .onAppear {
-            viewModel.loadProducts()
+           // viewModel.loadProducts()
         }
     }
 }

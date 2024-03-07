@@ -20,5 +20,53 @@
             landmarkType = "14">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "89EE8E28-E397-43D7-B1D0-43FB5B61DC9B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShopDesign/ShopDesignApp.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "89EE8E28-E397-43D7-B1D0-43FB5B61DC9B - 2a01edf0f0845f26"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Result&lt;SwiftData.ModelContainer, Swift.Error&gt;) -&gt; () in ShopDesign.ShopDesignApp.body.getter : some"
+                  moduleName = "ShopDesign"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/saboor/Desktop/Design/Project/ShopDesign/ShopDesign/ShopDesignApp.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "295">
+               </Location>
+               <Location
+                  uuid = "89EE8E28-E397-43D7-B1D0-43FB5B61DC9B - 2a01edf0f0845f26"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Result&lt;SwiftData.ModelContainer, Swift.Error&gt;) -&gt; () in ShopDesign.ShopDesignApp.body.getter : some"
+                  moduleName = "ShopDesign"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/saboor/Desktop/Design/Project/ShopDesign/ShopDesign/ShopDesignApp.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "251">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
