@@ -7,12 +7,25 @@
 		<key>ShopDesign.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<key>ShopDesignWidgetExtension.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>D37EA9252B8F45BD0000C0CE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D38B99AA2B98897B00EF1210</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

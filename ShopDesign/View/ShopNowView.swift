@@ -12,48 +12,70 @@ struct ShopNowView: View {
     
     @Environment(\.dismiss) var dismiss
     @State var searchText = ""
-    var column : [GridItem] = [
+    @State var isSearchActive = false
+    @Query(sort: [SortDescriptor(\ProductPersistentModel.name)]) var products: [ProductPersistentModel]
+    @State var filteredProducts: [ProductPersistentModel] = []
+    @State private var showNavigationBar = true
+    
+    let column : [GridItem] = [
         .init(.flexible()),
         .init(.flexible())
     ]
-    //var viewModel = ProductViewModel()
-    @Query var products : [ProductPersistentModel]
+
     var body: some View {
         VStack {
             NavigationView {
-                ScrollView(.vertical,showsIndicators: false) {
-                    LazyVGrid(columns: column, content: {
-                        
-                        ForEach(products,id:\.name) { product in
-                            ProductGridView(product: product)
+                ScrollView(.vertical,showsIndicators:false) {
+                    LazyVGrid(columns: column) {
+                        ForEach(filteredProducts, id: \.name) { item in
+                            ProductGridView(product: item)
                         }
-                    })
+                    }
                     .padding()
                 }
-                .searchable(text: $searchText)
-                //.navigationBarBackButtonHidden()
-                .navigationTitle("Shop Now")
-                .toolbar{
-                    ToolbarItemGroup(placement: .topBarTrailing) {
-                        Image(systemName: "magnifyingglass")
-                        Image(systemName: "list.triangle")
-                    }
+                .navigationTitle("ShopNow")
+                .navigationBarTitleDisplayMode(.inline)
+                .toolbar {
                     ToolbarItem(placement: .topBarLeading) {
-                        Button(action: {
+                        Button {
                             dismiss()
-                        }, label: {
+                        } label: {
                             Image(systemName: "chevron.left")
-                                .tint(.black)
-                        })
+                        }
+                        .buttonStyle(.plain)
+
+                    }
+                    ToolbarItem(placement: .topBarTrailing) {
+                        Button {
+                            isSearchActive.toggle()
+                        } label: {
+                            Image(systemName: "magnifyingglass")
+                        }
+                        .buttonStyle(.plain)
+
                     }
                 }
-            }
-            .onAppear {
-                //viewModel.loadProducts()
+                .searchable(text: $searchText,isPresented : $isSearchActive,placement: .automatic)
+               // .navigationBarDrawer(displayMode: .)
+                .onChange(of: searchText) { _, new in
+                                updateFilteredProducts()
+                            }
+                .onAppear {
+                    updateFilteredProducts()
+                }
             }
         }
         .navigationBarHidden(true)
+        
     }
+
+    private func updateFilteredProducts() {
+        filteredProducts = searchText.isEmpty ? products : products.filter {
+            $0.name.localizedStandardContains(searchText)
+        }
+    }
+    
+    
 }
 
 #Preview {

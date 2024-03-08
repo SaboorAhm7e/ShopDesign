@@ -23,47 +23,47 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "89EE8E28-E397-43D7-B1D0-43FB5B61DC9B"
+            uuid = "56F3417E-A13B-4EC8-A23D-F1DCDBA6173D"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ShopDesign/ShopDesignApp.swift"
+            filePath = "ShopDesign/View/ShopNowGridView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
                <Location
-                  uuid = "89EE8E28-E397-43D7-B1D0-43FB5B61DC9B - 2a01edf0f0845f26"
+                  uuid = "56F3417E-A13B-4EC8-A23D-F1DCDBA6173D - 772a4bb783ad3f4d"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #2 (Swift.Result&lt;SwiftData.ModelContainer, Swift.Error&gt;) -&gt; () in ShopDesign.ShopDesignApp.body.getter : some"
+                  symbolName = "closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;ShopDesign.ProductPersistentModel&gt;, Swift.String, ShopDesign.ProductGridView&gt; in ShopDesign.ShopNowGridView.body.getter : some"
                   moduleName = "ShopDesign"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/saboor/Desktop/Design/Project/ShopDesign/ShopDesign/ShopDesignApp.swift"
+                  urlString = "file:///Users/saboor/Desktop/Design/Project/ShopDesign/ShopDesign/View/ShopNowGridView.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "19"
-                  endingLineNumber = "19"
-                  offsetFromSymbolStart = "295">
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "162">
                </Location>
                <Location
-                  uuid = "89EE8E28-E397-43D7-B1D0-43FB5B61DC9B - 2a01edf0f0845f26"
+                  uuid = "56F3417E-A13B-4EC8-A23D-F1DCDBA6173D - 69c99c184491e656"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #2 (Swift.Result&lt;SwiftData.ModelContainer, Swift.Error&gt;) -&gt; () in ShopDesign.ShopDesignApp.body.getter : some"
+                  symbolName = "closure #1 (ShopDesign.ProductPersistentModel) -&gt; ShopDesign.ProductGridView in closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;ShopDesign.ProductPersistentModel&gt;, Swift.String, ShopDesign.ProductGridView&gt; in ShopDesign.ShopNowGridView.body.getter : some"
                   moduleName = "ShopDesign"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/saboor/Desktop/Design/Project/ShopDesign/ShopDesign/ShopDesignApp.swift"
+                  urlString = "file:///Users/saboor/Desktop/Design/Project/ShopDesign/ShopDesign/View/ShopNowGridView.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "19"
-                  endingLineNumber = "19"
-                  offsetFromSymbolStart = "251">
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "39">
                </Location>
             </Locations>
          </BreakpointContent>

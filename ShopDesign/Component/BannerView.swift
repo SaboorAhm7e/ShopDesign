@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct BannerView: View {
+    @State private var sortDescriptor = SortDescriptor(\ProductPersistentModel.name)
     var body: some View {
         VStack(alignment:.leading) {
             Text("Discover")
