@@ -19,12 +19,11 @@ struct HomeView: View {
     
     var body: some View {
         NavigationView {
-            VStack() {
+            VStack {
                 BannerView()
-                
+                    .frame(height:250)
                 TestTabView()
-                    .frame(height: 80)
-                //.padding(.vertical, 5)
+                    .frame(height: 50)
                 Divider()
                 
                 ScrollView(.vertical, showsIndicators: false) {
@@ -42,23 +41,7 @@ struct HomeView: View {
                 
                 Spacer()
             }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    Button(action: {}) {
-                        Image(systemName: "line.3.horizontal")
-                    }
-                    .tint(Color.black)
-                }
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(action: {}) {
-                        Image(systemName: "magnifyingglass")
-                    }
-                    .tint(Color.black)
-                }
-            }
-        }
-        .onAppear {
-           // viewModel.loadProducts()
+            .navigationTitle("Discover")
         }
     }
 }

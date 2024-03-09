@@ -71,7 +71,7 @@ struct DetailView: View {
                             }) {
                                 Image(systemName: "arrow.left")
                             }
-                            .tint(.black)
+                            .tint(Color("labelColor"))
                         }
                         ToolbarItem(placement: .navigationBarTrailing) {
                             Button(action: {

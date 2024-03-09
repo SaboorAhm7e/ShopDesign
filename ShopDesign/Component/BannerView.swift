@@ -9,57 +9,46 @@ import SwiftUI
 
 struct BannerView: View {
     @State private var sortDescriptor = SortDescriptor(\ProductPersistentModel.name)
+    var bannerImages : [String] = [
+        "bannerImage1",
+        "bannerImage2",
+        "bannerImage3",
+        "bannerImage4",
+    ]
     var body: some View {
-        VStack(alignment:.leading) {
-            Text("Discover")
-                .font(.title)
-                .fontWeight(.bold)
-                .padding()
-            
-            ZStack(alignment:.bottom) {
-               Image("banner")
+        TabView {
+            ForEach(bannerImages,id:\.self) { banner in
+                Image(banner)
                     .resizable()
-                    .scaledToFill()
+                    .scaledToFit()
                     .frame(height: 250)
-                    
-                VStack(alignment: .leading) {
-                    Text("Brand New Winter\nCollections")
-                        .font(.title)
-                        .fontWeight(.bold)
-                        .foregroundStyle(Color.white)
-                        .shadow(radius: 10)
-                    
-                    NavigationLink {
-                        ShopNowView()
-                            
-                    } label: {
-                        HStack {
-                            Text("Shop Now")
-                            Image(systemName: "arrow.right")
-                        }
-                        .font(.body)
-                        .fontWeight(.semibold)
-                        .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
-                        .foregroundStyle(Color.white)
-                    }
-
-//                    
-//                    Button {
-//                        print("shop Now")
-//                    } label: {
-//                        
-//                       
-//                    }
-//                    .tint(Color.white)
-
-                }
-                .offset(x:-50,y: -10)
             }
         }
-
+        .tabViewStyle(.page)
+        .overlay(
+            NavigationLink {
+                ShopNowView()
+                
+            } label: {
+                HStack {
+                    Image(systemName: "arrow.right")
+                }
+                .font(.body)
+                .fontWeight(.semibold)
+                .foregroundStyle(Color.white)
+                .padding()
+                .background(.ultraThinMaterial)
+                .clipShape(Circle())
+                .shadow(radius: 10)
+                .offset(x:-10,y:-25)
+            }
+            ,alignment: .bottomTrailing
+        )
+        
     }
 }
 
 #Preview {
     BannerView()
+        .preferredColorScheme(.dark)
 }

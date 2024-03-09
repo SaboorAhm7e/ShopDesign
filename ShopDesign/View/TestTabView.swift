@@ -42,10 +42,11 @@ struct TabItemView : View {
             VStack {
                 Spacer()
                 Text(title)
+                    .foregroundStyle(Color("labelColor"))
                     .fontWeight(currentTab == tab ? .bold : .medium)
-                    .animation(.spring(),value: currentTab)
+                    .animation(.easeInOut(duration: 0.2))
                 if currentTab == tab {
-                    Color.black
+                    Color("labelColor")
                         .frame(height: 4)
                         .matchedGeometryEffect(id: "underline", in: namespace,properties: .frame)
                 } else {

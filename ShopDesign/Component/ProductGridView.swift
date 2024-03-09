@@ -29,6 +29,7 @@ struct ProductGridView: View {
             }
             .font(.title3)
             .fontWeight(.medium)
+            .foregroundStyle(Color("labelColor"))
         }
     }
 }

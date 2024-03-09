@@ -17,7 +17,7 @@ struct BlackButtonStyle : ButtonStyle {
             .frame(height: 60)
             .frame(maxWidth: .infinity)
             .background(
-                Capsule().fill(Color.black)
+                Capsule().fill(Color("buttonColor"))
                 )
     }
 }
