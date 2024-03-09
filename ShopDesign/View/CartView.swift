@@ -6,16 +6,18 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct CartView: View {
     @Environment(\.dismiss) var dismiss 
+    @Query var cartItems : [CartModel]
     var body: some View {
         NavigationStack {
             VStack {
                 ScrollView {
                     VStack {
-                        ForEach(0..<2,id:\.self) { item in
-                        CartProductView()
+                        ForEach(cartItems,id:\.self) { item in
+                        CartProductView(cartItem: item)
                         }
                         Divider()
                         VStack(alignment:.leading) {

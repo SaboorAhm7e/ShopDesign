@@ -28,6 +28,9 @@ class ProductPersistentModel : Codable {
     var sizes  : [String]
     var isFavorite : Bool = false
     var isCartItem : Bool = false
+    var stringPrice : String {
+        return "$\(price)"
+    }
   
     
     init(name: String, price: Int, coverImage: String, detail: String, sizes: [String], isFavorite: Bool, isCartItem: Bool) {

@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct CartProductView: View {
+    
+    var cartItem : CartModel?
     var body: some View {
         HStack(alignment: .top) {
-            Image("yellow")
+            Image(cartItem?.item.coverImage ?? "yellow")
                 .resizable()
                 .scaledToFit()
                 .frame(width: 150,height: 150)
@@ -22,7 +24,7 @@ struct CartProductView: View {
                 Text("Men's Collection")
                     .font(.footnote)
                     .foregroundStyle(.secondary)
-                Text("Yellow T-Shirt")
+                Text(cartItem?.item.name ?? "Yellow T-Shirt")
                     .font(.title3)
                 Spacer()
                     .frame(height:10)
@@ -58,7 +60,7 @@ struct CartProductView: View {
                             .foregroundStyle(Color.black)
                     }
                     Spacer()
-                    Text("$112")
+                    Text(cartItem?.item.stringPrice ?? "$112")
                         .font(.system(size: 25))
                         .fontWeight(.medium)
                 }

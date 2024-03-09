@@ -31,6 +31,7 @@ struct BannerView: View {
                     
                     NavigationLink {
                         ShopNowView()
+                            
                     } label: {
                         HStack {
                             Text("Shop Now")

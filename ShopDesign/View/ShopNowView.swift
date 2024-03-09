@@ -28,7 +28,14 @@ struct ShopNowView: View {
                 ScrollView(.vertical,showsIndicators:false) {
                     LazyVGrid(columns: column) {
                         ForEach(filteredProducts, id: \.name) { item in
-                            ProductGridView(product: item)
+                            NavigationLink {
+                                DetailView(product:item)
+                            } label: {
+                                ProductGridView(product: item)
+                            }
+                            .tint(.black)
+
+                            
                         }
                     }
                     .padding()
@@ -56,16 +63,17 @@ struct ShopNowView: View {
                     }
                 }
                 .searchable(text: $searchText,isPresented : $isSearchActive,placement: .automatic)
-               // .navigationBarDrawer(displayMode: .)
                 .onChange(of: searchText) { _, new in
                                 updateFilteredProducts()
                             }
                 .onAppear {
                     updateFilteredProducts()
                 }
+                //.toolbar(.hidden, for: .tabBar)
             }
         }
         .navigationBarHidden(true)
+       
         
     }
 

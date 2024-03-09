@@ -10,13 +10,16 @@ import SwiftUI
 struct DetailView: View {
     @Environment(\.dismiss) var dismiss
     var otherImages : [String] = ["yellow","brown","pink","silver"]
+    var product : ProductPersistentModel?
     var body: some View {
         
         VStack {
             NavigationStack {
                 ScrollView(showsIndicators:false) {
                 VStack(alignment: .center) {
-                    Image("blue")
+                    Image(product?.coverImage ?? "blue")
+                        .resizable()
+                        .scaledToFit()
                     //.frame(height:200)
                     //.padding(.top,10)
                         .padding(.bottom,5)
@@ -31,23 +34,23 @@ struct DetailView: View {
                         .padding(.horizontal)
                     }
                     VStack(alignment:.leading) {
-                        Text("Blue T-Shirt")
+                        Text(product?.name ?? "Blue T-Shirt")
                             .font(.title)
                             .fontWeight(.bold)
-                        Text("$100")
+                        Text(product?.stringPrice ?? "$0")
                             .font(.title)
                             .fontWeight(.semibold)
-                        Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
+                        Text(product?.detail ?? "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
                             .font(.footnote)
                             .foregroundStyle(Color.secondary)
                         Text("Choose Size")
                         HStack {
-                            ProductSizeView(text: "S")
-                            ProductSizeView(text: "M")
-                            ProductSizeView(text: "L")
+                            ForEach(product?.sizes ?? ["M"],id:\.self) { size in
+                                ProductSizeView(text: size)
+                            }
                         }
                         NavigationLink(destination: CartView()) {
-                            AddToCartButton()
+                            AddToCartButton(product: product!)
                                 .padding(.top,20)
                         }
                         

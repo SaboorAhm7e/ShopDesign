@@ -14,7 +14,8 @@ struct ShopDesignApp: App {
         WindowGroup {
             ContentView()
         }
-        .modelContainer(for: ProductPersistentModel.self) { result in
+       // .modelContainer(for: )
+        .modelContainer(for: [ProductPersistentModel.self,CartModel.self]) { result in
             do {
                 let container = try result.get()
                 
@@ -39,5 +40,6 @@ struct ShopDesignApp: App {
             }
             
         }
+        
     }
 }
