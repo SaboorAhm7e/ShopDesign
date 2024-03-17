@@ -29,7 +29,7 @@ struct HomeView: View {
                 ScrollView(.vertical, showsIndicators: false) {
                     LazyVGrid(columns: column) {
                         ForEach(products, id: \.name) { product in
-                            NavigationLink(destination: DetailView()) {
+                            NavigationLink(destination: DetailView(product: product)) {
                                 ProductGridView(product: product)
                                     .tint(Color.black)
                                     //.toolbar(.hidden, for: .tabBar)

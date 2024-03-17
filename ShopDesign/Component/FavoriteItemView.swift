@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct FavoriteItemView: View {
+    @Bindable var product : ProductPersistentModel
     var body: some View {
         VStack {
-            Image("yellow")
+            Image(product.coverImage)
                 .resizable()
                 .scaledToFit()
                 .frame(width: 150,height: 150)
@@ -18,11 +19,20 @@ struct FavoriteItemView: View {
                     RoundedRectangle(cornerRadius: 10)
                         .fill(Color.secondary.opacity(0.3))
                 }
+                .overlay(alignment: .topTrailing) {
+                    Image(systemName:  "heart.fill")
+                        .foregroundStyle(product.isFavorite ? Color.pink : Color.secondary)
+                        .offset(x:-5,y:5)
+                        .onTapGesture {
+                            product.isFavorite.toggle()
+                        }
+                    
+                }
             VStack(alignment:.leading) {
-                Text("Yellow T-Shirt")
+                Text(product.name)
                     .font(.title3)
                     .fontWeight(.semibold)
-                Text("$100")
+                Text(product.stringPrice)
                     .font(.title3)
                     .fontWeight(.bold)
             }
@@ -30,6 +40,3 @@ struct FavoriteItemView: View {
     }
 }
 
-#Preview {
-    FavoriteItemView()
-}

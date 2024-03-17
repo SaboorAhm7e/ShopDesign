@@ -6,8 +6,12 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct FavoriteView: View {
+    @Query(filter: #Predicate<ProductPersistentModel> { product in
+        product.isFavorite == true
+    }) var products : [ProductPersistentModel]
     var gridItem : [GridItem] = [
         .init(.flexible()),
         .init(.flexible())
@@ -16,8 +20,8 @@ struct FavoriteView: View {
         NavigationStack {
             ScrollView(showsIndicators: false) {
                 LazyVGrid(columns: gridItem){
-                    ForEach(0..<4,id:\.self) { item in
-                        FavoriteItemView()
+                    ForEach(products,id:\.name) { item in
+                        FavoriteItemView(product: item)
                     }
                 }
                 .padding()
