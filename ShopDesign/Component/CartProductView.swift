@@ -9,10 +9,10 @@ import SwiftUI
 
 struct CartProductView: View {
     
-    var cartItem : CartModel?
+    @Bindable var cartItem : CartModel
     var body: some View {
         HStack(alignment: .top) {
-            Image(cartItem?.item.coverImage ?? "yellow")
+            Image(cartItem.item.coverImage)
                 .resizable()
                 .scaledToFit()
                 .frame(width: 150,height: 150)
@@ -24,13 +24,13 @@ struct CartProductView: View {
                 Text("Men's Collection")
                     .font(.footnote)
                     .foregroundStyle(.secondary)
-                Text(cartItem?.item.name ?? "Yellow T-Shirt")
+                Text(cartItem.item.name)
                     .font(.title3)
                 Spacer()
                     .frame(height:10)
                 HStack(spacing:10) {
                     Button {
-                        print("minus")
+                        deccrement()
                     } label: {
                         Image(systemName: "minus.square")
                             .font(.system(size: 25))
@@ -38,11 +38,11 @@ struct CartProductView: View {
                     }
 
                     
-                    Text("1")
+                    Text("\(cartItem.quantity)")
                         .font(.system(size: 25))
                     
                     Button {
-                        print("plus")
+                        increment()
                     } label: {
                         Image(systemName: "plus.square")
                             .font(.system(size: 25))
@@ -52,17 +52,11 @@ struct CartProductView: View {
                 Spacer()
                     .frame(height:20)
                 HStack {
-                    Button {
-                        print("heart")
-                    } label: {
-                        Image(systemName: "heart")
-                            .font(.system(size: 25))
-                            .foregroundStyle(Color.black)
-                    }
-                    Spacer()
-                    Text(cartItem?.item.stringPrice ?? "$112")
+                    
+                    Text("$\(cartItem.item.price * cartItem.quantity)")
                         .font(.system(size: 25))
                         .fontWeight(.medium)
+                    Spacer()
                 }
                
 
@@ -70,8 +64,20 @@ struct CartProductView: View {
         }
         //.padding()
     }
-}
-
-#Preview {
-    CartProductView()
+    
+    // MARK: - Fuctions
+    func increment() {
+        if cartItem.quantity == 5 {
+            
+        } else {
+            cartItem.quantity += 1
+        }
+    }
+    func deccrement() {
+        if cartItem.quantity == 1 {
+            
+        } else {
+            cartItem.quantity -= 1
+        }
+    }
 }

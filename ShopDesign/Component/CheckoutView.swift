@@ -8,13 +8,14 @@
 import SwiftUI
 
 struct CheckoutView: View {
+    var total = 0
     var body: some View {
         HStack(alignment:.center) {
             VStack(alignment:.leading) {
                 Text("Total")
                     .font(.title3)
                     .fontWeight(.medium)
-                Text("$100")
+                Text("$\(total)")
                     .font(.title)
                     .fontWeight(.semibold)
             }

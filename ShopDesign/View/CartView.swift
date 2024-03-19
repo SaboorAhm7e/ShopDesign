@@ -32,7 +32,7 @@ struct CartView: View {
                 .padding(.top,10)
                 .padding(.horizontal)
                 Divider()
-                CheckoutView()
+                CheckoutView(total: cartItems.map { $0.item.price * $0.quantity}.reduce(0,+))
             }
             .navigationTitle("Bag")
             .navigationBarTitleDisplayMode(.inline)
